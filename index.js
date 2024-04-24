@@ -6,23 +6,23 @@ import cors from "cors";
 import bookRoute from "./route/book.route.js"
 import userRoute from "./route/user.route.js";
 const router = createBrowserRouter([
- {
-  path: "/",
-  element: Home(),
- },
- {
-  path:'/course',
-  element: Course();
- }
   {
-  path:'/about',
-  element: About();
- }
- {
-  path:'/contact',
-  element: Contact();
- }
-]);
+   path: "/",
+   element: Home(),
+  },
+  {
+   path:'/course',
+   element: Courses(),
+  },
+   {
+   path:'/about',
+   element: About(),
+  },
+  {
+   path:'/contact',
+   element: Contact(),
+  }
+ ]);
 const app = express();
 
 app.use(cors());
